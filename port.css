@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: cursive;
+    background: linear-gradient(to bottom, #0072ff, #00c6ff);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+    padding: 5px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.menu li a:hover {
+    background-color: lightsalmon;
+}
+
+
+#bio-section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 50px 0;
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bio-image {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.bio-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.bio-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+
+.bio-text {
+    flex: 2;
+}
+
+.bio-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.bio-text p {
+    font-size: 16px;
+}
+
+#skills-section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 50px 0px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.skill {
+    flex: 1;
+    text-align: center;
+}
+
+.skill img {
+    width: 100px;
+    border-radius: 20%;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+
+.skill p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+#project{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: center;
+}
+
+.projects img {
+    width: 100px;
+    border-radius: 20%;
+    margin-right: 20px;
+}
+
+.projects img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+
+h2 {
+    text-align: center;
+}
+
+td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+th {
+    background-color: rgb(192, 243, 172);
+}
+
+td {
+    background-color: aliceblue;
+}
+.Education{
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: center;
+}
+#education{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+}
+.footer {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.social-icons-footer a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons-footer a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons-footer img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .social-icons-footer a {
+        margin: 0 5px;
+    }
+
+    .bio-content,
+    .skills-container,
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .skill {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    table {
+        max-width: 100%;
+        justify-content: center;
+    }
+    td:hover {
+        background-color: rgb(224, 205, 96);
+    }
+}
